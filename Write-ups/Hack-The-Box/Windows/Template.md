@@ -1,11 +1,11 @@
-#Enumeración | Reconocimiento | y posibles ataques
+# Enumeración | Reconocimiento | y posibles ataques
 
 
 
 
 
 
-#Explotación y movimiento lateral
+# Explotación y movimiento lateral
 
 
 
