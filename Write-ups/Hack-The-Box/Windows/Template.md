@@ -32,8 +32,8 @@ Links útiles
   
   
   
-  Lenguajes utilizados
-  Vulnerabilidades en aplicaciones
-  Escalada de privilegios
-  Exploits
-  Herramientas
+Lenguajes utilizados
+Vulnerabilidades en aplicaciones
+Escalada de privilegios
+Exploits
+Herramientas
