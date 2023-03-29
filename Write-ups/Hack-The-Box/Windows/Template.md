@@ -13,27 +13,27 @@
 
 
 
-#Explotación WEB
+# Explotación WEB
 
 
 
 
 
 
-#Escalada de privilegios
+# Escalada de privilegios
 
 
 
 
 
-#Links útiles
+# Links útiles
 
 
   
   
   
-##Lenguajes utilizados
-##Vulnerabilidades en aplicaciones
-##Escalada de privilegios
-##Exploits
-##Herramientas
+## Lenguajes utilizados
+## Vulnerabilidades en aplicaciones
+## Escalada de privilegios
+## Exploits
+## Herramientas
