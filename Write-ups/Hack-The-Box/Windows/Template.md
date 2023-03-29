@@ -1,11 +1,11 @@
-Enumeración | Reconocimiento | y posibles ataques
+#Enumeración | Reconocimiento | y posibles ataques
 
 
 
 
 
 
-Explotación y movimiento lateral
+#Explotación y movimiento lateral
 
 
 
@@ -13,27 +13,27 @@ Explotación y movimiento lateral
 
 
 
-Explotación WEB
+#Explotación WEB
 
 
 
 
 
 
-Escalada de privilegios
+#Escalada de privilegios
 
 
 
 
 
-Links útiles
+#Links útiles
 
 
   
   
   
-Lenguajes utilizados
-Vulnerabilidades en aplicaciones
-Escalada de privilegios
-Exploits
-Herramientas
+##Lenguajes utilizados
+##Vulnerabilidades en aplicaciones
+##Escalada de privilegios
+##Exploits
+##Herramientas
