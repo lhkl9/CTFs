@@ -211,17 +211,17 @@ JuicyPotato para explotar SeImpersonatePrivilege
 
 ## Herramientas
 
-ping
-nmap
-rpcclient
-certutil.exe
-nc.exe
-rlwrap
-python3 -m http.server 80
-java/jsp_shell_reverse_tcp.jsp
-searchsploit
-msfvenom
-hashid
-hash-identifier
-Crackstation
+* ping
+* nmap
+* rpcclient
+* certutil.exe
+* nc.exe
+* rlwrap
+* python3 -m http.server 80
+* java/jsp_shell_reverse_tcp.jsp
+* searchsploit
+* msfvenom
+* hashid
+* hash-identifier
+* Crackstation
 
