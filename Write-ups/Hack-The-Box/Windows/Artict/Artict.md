@@ -7,6 +7,7 @@ TTL = 127
 
 Indica que es un equipo Windows
 
+![Texto alternativo](CTFs/Write-ups/Hack-The-Box/Windows/Artict/imgs/1.jpg)
 
 
 Escaneo de puertos TCP abiertos
