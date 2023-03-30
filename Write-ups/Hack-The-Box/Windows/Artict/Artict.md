@@ -193,8 +193,8 @@ Encuentro la Flag
 
 # Links útiles
 
-www.google.com
-www.crackstation.net
+* www.google.com
+* www.crackstation.net
   
   
   
@@ -202,12 +202,12 @@ www.crackstation.net
 ## Vulnerabilidades en aplicaciones
 ## Escalada de privilegios
 
-Abuso de SeImpersonatePrivilege 
+* Abuso de SeImpersonatePrivilege 
 
 ## Exploits
 
-Adobe ColdFusion - Directory Traversal | multiple/remote/14641.py
-JuicyPotato para explotar SeImpersonatePrivilege
+* Adobe ColdFusion - Directory Traversal | multiple/remote/14641.py
+* JuicyPotato para explotar SeImpersonatePrivilege
 
 ## Herramientas
 
