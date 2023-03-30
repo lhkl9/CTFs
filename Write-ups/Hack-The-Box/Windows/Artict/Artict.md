@@ -195,7 +195,9 @@ Encuentro la Flag
 
 * www.google.com
 * www.crackstation.net
-  
+* https://eternallybored.org/misc/netcat/
+* https://github.com/ohpe/juicy-potato/releases/tag/v0.1
+
   
   
 ## Lenguajes utilizados
