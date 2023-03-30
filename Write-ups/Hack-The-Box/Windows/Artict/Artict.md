@@ -1,4 +1,7 @@
 
+# ARTICT - HACK THE BOX - EASY
+
+
 # Enumeración | Reconocimiento | y posibles ataques
 
 Envío paquetes de prueba ICMP (Internet Control Message Protocol) hacia el equipo para verificar conectividad y ver el TTL
@@ -199,9 +202,8 @@ Encuentro la Flag
 * https://github.com/ohpe/juicy-potato/releases/tag/v0.1
 
   
-  
 ## Lenguajes utilizados
-## Vulnerabilidades en aplicaciones
+-
 ## Escalada de privilegios
 
 * Abuso de SeImpersonatePrivilege 
