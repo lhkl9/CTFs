@@ -82,6 +82,13 @@ dig @10.10.10.161 htb.local ns
 
 AXFR pero no me detalla nada
 
+
+
+
+
+# Explotación y movimiento lateral
+
+
 ![Texto alternativo](imgs/9.jpg)
 
 Como es un DC uso RCPCLIENT para intentar enumerar usuarios
@@ -97,7 +104,9 @@ Listo la información de los usuarios
 
 ![Texto alternativo](imgs/11.jpg)
 
-Ataque Kerberos, obtengo algún TGT de un usuario para intentar crackearlo
+Ataque Kerberos, intento obtener algún ticket TGT de usuario de dominio usando la autenticación "Kerberos Pre-Authentication". Si un usuario tiene habilitada la opción de "Kerberos Pre-Authentication" pero tiene una contraseña débil o en blanco, podríamos obtener un ticket TGT para ese usuario, y nos devolvería la contraseña de ese usuario.
+
+
 python3 GetNPUsers.py -no-pass -usersfile /home/kali/Desktop/users.txt htb.local/
 
 ![Texto alternativo](imgs/12.jpg)
@@ -130,6 +139,18 @@ evil-winrm -i 10.10.10.161 -u 'svc-alfresco' -p 's3rvice
 
 ![Texto alternativo](imgs/16.jpg)
 
+
+
+
+
+# Explotación WEB
+
+
+
+
+
+
+# Escalada de privilegios
 
 Extraigo la información de usuarios, grupos y privilegios del AD con ldapdomaindump
 
@@ -230,26 +251,6 @@ evil-winrm -i 10.10.10.161 -u 'Administrator' -H '32693b11e6aa90eb43d32c72a07cee
 
 
 
-# Explotación y movimiento lateral
-
-
-
-
-
-
-
-# Explotación WEB
-
-
-
-
-
-
-# Escalada de privilegios
-
-
-
-
 
 # Links útiles
 
@@ -259,7 +260,15 @@ www.google.com
   
 ## Lenguajes utilizados
 ## Vulnerabilidades en aplicaciones
+## Ataques
+* Domain Zone 	Transfer (AXFR)
+* "Password Spraying" | GetNPUsers.py : Intenta obtener tickets TGT de usuarios de un dominio Active Directory utilizando el tipo de autenticación "Kerberos Pre-Authentication". En esta máquina GetNPUsers.py utiliza una lista de usuarios en un archivo llamado "users.txt" y no proporciona una contraseña para cada usuario (de ahí el uso del parámetro "-no-pass"). En lugar de ello, intenta autenticarse en el dominio utilizando una contraseña en blanco para cada usuario.
+
+Si un usuario en el dominio tiene habilitada la opción de "Kerberos Pre-Authentication" pero tiene una contraseña débil o en blanco, obtendremos un ticket TGT para ese usuario, lo que nos permitiría acceder a los recursos protegidos por Kerberos en el dominio.
 ## Escalada de privilegios
-* Grupo
+* Grupo Exchange Windows Permissions
+* Creación de usuario
+* Agregar grupo 
+* Abusando WriteDACL
 ## Exploits
 ## Herramientas
