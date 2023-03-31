@@ -258,7 +258,7 @@ evil-winrm -i 10.10.10.161 -u 'Administrator' -H '32693b11e6aa90eb43d32c72a07cee
 
 * https://github.com/puckiestyle/powershell/blob/master/SharpHound.ps1
 * www.google.com
-  
+* https://raw.githubusercontent.com/PowerShellMafia/PowerSploit/master/Recon/PowerView.ps1
   
 ## Lenguajes utilizados
 
