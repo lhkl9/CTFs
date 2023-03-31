@@ -34,6 +34,7 @@
   
 ## Lenguajes utilizados
 ## Vulnerabilidades en aplicaciones
+## Ataques
 ## Escalada de privilegios
 ## Exploits
 ## Herramientas
