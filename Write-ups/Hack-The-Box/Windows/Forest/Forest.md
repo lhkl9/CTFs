@@ -259,12 +259,23 @@ www.google.com
   
   
 ## Lenguajes utilizados
+
+* Powershell
 ## Vulnerabilidades en aplicaciones
 ## Ataques
-* Domain Zone 	Transfer (AXFR)
+* Domain Zone 	Transfer (AXFR) | dig : El ataque de "Domain Zone Transfer" (AXFR) es una técnica utilizada para obtener información confidencial de un servidor DNS que no está configurado adecuadamente. Este ataque se aprovecha de una función en el protocolo DNS que permite a los servidores DNS compartir información sobre los registros de DNS de un dominio.
+
+En un ataque de Domain Zone Transfer, un atacante envía una solicitud AXFR al servidor DNS del dominio, solicitando una copia de la información completa sobre los registros DNS del dominio. Si el servidor DNS está configurado para permitir este tipo de solicitudes, enviará una copia completa de los registros DNS del dominio al atacante, incluyendo información sensible como nombres de host, direcciones IP, registros MX, registros de correo electrónico y otros datos relacionados con el dominio.
+
+Este tipo de ataque puede ser especialmente peligroso para las organizaciones ya que permite al atacante obtener información detallada sobre la infraestructura de red y los sistemas de la organización, lo que puede facilitar ataques posteriores.
+
+En este caso cuando lo intentamos no nos arrojó ninguna información
+
 * "Password Spraying" | GetNPUsers.py : Intenta obtener tickets TGT de usuarios de un dominio Active Directory utilizando el tipo de autenticación "Kerberos Pre-Authentication". En esta máquina GetNPUsers.py utiliza una lista de usuarios en un archivo llamado "users.txt" y no proporciona una contraseña para cada usuario (de ahí el uso del parámetro "-no-pass"). En lugar de ello, intenta autenticarse en el dominio utilizando una contraseña en blanco para cada usuario.
 
-Si un usuario en el dominio tiene habilitada la opción de "Kerberos Pre-Authentication" pero tiene una contraseña débil o en blanco, obtendremos un ticket TGT para ese usuario, lo que nos permitiría acceder a los recursos protegidos por Kerberos en el dominio.
+Si un usuario en el dominio tiene habilitada la opción de "Kerberos Pre-Authentication" pero tiene una contraseña débil o en blanco, obtendremos un ticket TGT para ese usuario, lo que nos permitiría crackear el hash, obtener la contraseña y acceder a los recursos protegidos por Kerberos en el dominio.
+
+
 ## Escalada de privilegios
 * Grupo Exchange Windows Permissions
 * Creación de usuario
@@ -272,3 +283,18 @@ Si un usuario en el dominio tiene habilitada la opción de "Kerberos Pre-Authent
 * Abusando WriteDACL
 ## Exploits
 ## Herramientas
+* ping : Identificar sistema operativo
+* nmap : Identificar puertos TCP abiertos y servicios
+* crackmapexec : Obtener características del equipo
+* smbclient : Enumerar recursos compartidos en la red sin credenciales mediante el puerto TCP 445 o 139
+* dig : Analizar información expuesta por los DNS
+* rpcclient : Autenticar sin credenciales para enumerar usuarios y grupos válidos
+* Python3 GetNPUsers.py : Realizar un "Password Spraying" obteniendo un ticket TGT para crackear
+* john : Para crackear el ticket TGT obtenido con GetNPUsers.py
+* evil-winrm : Para acceder con credenciales a un equipo windows por el puerto TCP 5985 o TCP 5986
+* ldapdomaindump
+* bloodhound
+* Sharphound.ps1
+* secretsdump.py
+* crackmapexec
+
