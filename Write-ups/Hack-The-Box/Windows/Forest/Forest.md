@@ -254,8 +254,8 @@ evil-winrm -i 10.10.10.161 -u 'Administrator' -H '32693b11e6aa90eb43d32c72a07cee
 
 # Links útiles
 
-https://github.com/puckiestyle/powershell/blob/master/SharpHound.ps1
-www.google.com
+* https://github.com/puckiestyle/powershell/blob/master/SharpHound.ps1
+* www.google.com
   
   
 ## Lenguajes utilizados
@@ -292,9 +292,9 @@ Si un usuario en el dominio tiene habilitada la opción de "Kerberos Pre-Authent
 * Python3 GetNPUsers.py : Realizar un "Password Spraying" obteniendo un ticket TGT para crackear
 * john : Para crackear el ticket TGT obtenido con GetNPUsers.py
 * evil-winrm : Para acceder con credenciales a un equipo windows por el puerto TCP 5985 o TCP 5986
-* ldapdomaindump
-* bloodhound
-* Sharphound.ps1
-* secretsdump.py
-* crackmapexec
+* ldapdomaindump : Para extraer información de un dominio, usuario, grupos, indicadores de segurid(SID), descripciones, permisos, estructura organizativa, etc
+* bloodhound : Análisis de seguridad de red, para detectar alternativas para escalar privilegios
+* Sharphound.ps1 : script para recopilar información sobre usuarios, grupos, equipos, permisos, etc. Arroja un .zip para subir a Bloodhound.
+* secretsdump.py : Para extraer contraseñas y hashes almacenados en equipos Windows
+* crackmapexec : En esta máquina también la usamos para usar la técnica VSS Shadow Copy para extraer la base de datos de contraseñas de NTDS
 
