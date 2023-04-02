@@ -126,6 +126,12 @@ tree para ver todos los archivos del repositorio descargado “dimension”
 
 ![Texto alternativo](imgs/20.jpg)
 
+
+
+
+
+# Explotación y movimiento lateral
+
 Ingreso con las credenciales “nathen” y “wendel98” al portal http://devops.worker.htb
 [Azure Devops]
 
@@ -246,6 +252,20 @@ Flag de usuario
 
 ![Texto alternativo](imgs/35.jpg)
 
+
+
+
+
+# Explotación WEB
+
+
+
+
+
+
+# Escalada de privilegios
+
+
 whoami /priv  → No hay privilegios especiales
 whoami /all → No hay grupos especiales
 net user robisl
@@ -281,26 +301,6 @@ Recibo consola
 Cambio de unidad “c:”
 
 ![Texto alternativo](imgs/42.jpg)
-
-
-# Explotación y movimiento lateral
-
-
-
-
-
-
-
-# Explotación WEB
-
-
-
-
-
-
-# Escalada de privilegios
-
-
 
 
 
