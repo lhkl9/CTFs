@@ -317,26 +317,26 @@ Cambio de unidad “c:”
 ## Lenguajes utilizados
 ## Vulnerabilidades en aplicaciones
 
-* Carga de web shell mediante Pipelines en Azure DevOps
+* __Carga de web shell mediante Pipelines en Azure DevOps__
 ## Ataques
 ## Escalada de privilegios
 
-* Ejecución de scripts como NT Authority System mediante Pipelines. (Release Pipeline)
+* __Ejecución de scripts como NT Authority System mediante Pipelines. (Release Pipeline)__
 ## Exploits
 ## Herramientas
 
-* ping
-* nmap
-* nc64.exe
-* cmdasp.aspx
-* Protocolo SVN
-* Pipelines en Azure DevOps: El despliegue de scripts mediante pipelines en Azure DevOps se llama "Release Pipeline" o "Pipeline de implementación". En esta etapa, se lleva a cabo la implementación de las aplicaciones o servicios creados en las etapas anteriores del pipeline, utilizando scripts y otros artefactos necesarios para el despliegue. La implementación puede incluir la configuración de infraestructura, la instalación de dependencias y la ejecución de scripts específicos para el entorno de destino. La implementación automatizada a través de pipelines permite una entrega más rápida, confiable y repetible de aplicaciones y servicios en Azure DevOps.
-* WFUZZ
-* GOBUSTER
+* __ping__
+* __nmap__
+* __nc64.exe__
+* __cmdasp.aspx__
+* __Protocolo SVN__
+* __Pipelines en Azure DevOps__: El despliegue de scripts mediante pipelines en Azure DevOps se llama "Release Pipeline" o "Pipeline de implementación". En esta etapa, se lleva a cabo la implementación de las aplicaciones o servicios creados en las etapas anteriores del pipeline, utilizando scripts y otros artefactos necesarios para el despliegue. La implementación puede incluir la configuración de infraestructura, la instalación de dependencias y la ejecución de scripts específicos para el entorno de destino. La implementación automatizada a través de pipelines permite una entrega más rápida, confiable y repetible de aplicaciones y servicios en Azure DevOps.
+* __WFUZZ__
+* __GOBUSTER__
 * nmap con cript http-enum
-* EVIL-WINRM : Herramienta utilizada para la explotación de vulnerabilidades en sistemas operativos Windows que permite el acceso remoto a una máquina en red utilizando el protocolo WinRM (Windows Remote Management) (Puerto 5985)(Puerto 5986 con SSL/TLS).
-* crackmapexec
-* Create pull request en Azure DevOps : "Create pull request" es una funcionalidad en Azure DevOps que permite a los desarrolladores colaborar y trabajar juntos en un proyecto de software mediante el control de versiones.
+* __EVIL-WINRM__ : Herramienta utilizada para la explotación de vulnerabilidades en sistemas operativos Windows que permite el acceso remoto a una máquina en red utilizando el protocolo WinRM (Windows Remote Management) (Puerto 5985)(Puerto 5986 con SSL/TLS).
+* __crackmapexec__
+* __Create pull request en Azure DevOps__ : "Create pull request" es una funcionalidad en Azure DevOps que permite a los desarrolladores colaborar y trabajar juntos en un proyecto de software mediante el control de versiones.
 
 Un pull request (solicitud de extracción) es una función que permite a los desarrolladores notificar a sus compañeros de equipo que han completado una nueva función o corrección de errores y solicitar que se revisen y fusionen sus cambios en la rama principal del proyecto.
 
@@ -345,7 +345,7 @@ Con la función "Create pull request" en Azure DevOps, los desarrolladores puede
 Una vez que se aprueba la solicitud de extracción, los cambios se fusionan en la rama principal del repositorio de código y están disponibles para su uso en futuras versiones del proyecto. En resumen, "Create pull request" es una herramienta valiosa en Azure DevOps que permite a los desarrolladores trabajar juntos de manera más eficiente y colaborativa en proyectos de software.
 
 
-* Create Pipelines en Azure DevOps : "Create Pipelines" es una funcionalidad en Azure DevOps que permite a los desarrolladores automatizar la construcción, prueba y implementación de su software.
+* __Create Pipelines en Azure DevOps__ : "Create Pipelines" es una funcionalidad en Azure DevOps que permite a los desarrolladores automatizar la construcción, prueba y implementación de su software.
 
 Un pipeline (tubería o canalización) en Azure DevOps es una serie de pasos automatizados que se ejecutan para construir, probar y publicar software en un ambiente específico. Al crear un pipeline en Azure DevOps, los desarrolladores pueden automatizar los procesos de integración continua y entrega continua (CI/CD) para garantizar que el software se construya y se implemente correctamente en cada cambio de código.
 
@@ -357,11 +357,11 @@ En resumen, "Create Pipelines" es una herramienta valiosa en Azure DevOps que pe
 
 ****los pipelines de Azure DevOps pueden ejecutar tareas como "NT-AUTORIDAD/SYSTEM" para realizar acciones que requieren permisos elevados****
 
-* Agents Pool en Azure DevOps
-* curl
-* net share : Se utiliza en sistemas operativos Windows, permite al usuario ver y administrar los recursos compartidos en una computadora en red.
+* __Agents Pool en Azure DevOps__ :
+* __curl__
+* __net share__ : Se utiliza en sistemas operativos Windows, permite al usuario ver y administrar los recursos compartidos en una computadora en red.
  La salida del comando "net share" mostrará una lista de todos los recursos compartidos en la computadora, incluidos los nombres de recurso, las rutas de acceso, los permisos de acceso y los niveles de uso. También se pueden agregar, modificar o eliminar recursos compartidos utilizando los argumentos del comando "net share".
 * w:
-* whoami /priv : Se utiliza en sistemas operativos Windows y muestra los privilegios actuales del usuario actual. La salida del comando incluirá una lista de los privilegios asignados al usuario actual, que se han otorgado directamente al usuario o a través de los grupos a los que pertenece.
-* whoami /all : Se utiliza en sistemas operativos Windows y muestra información detallada sobre la cuenta de usuario actual. La salida del comando incluirá información como el nombre de inicio de sesión, el SID (identificador de seguridad), los grupos de seguridad a los que pertenece el usuario, la información de inicio de sesión interactiva y de red, la información de inicio de sesión de servicio y los derechos asignados al usuario.
+* __whoami /priv__ : Se utiliza en sistemas operativos Windows y muestra los privilegios actuales del usuario actual. La salida del comando incluirá una lista de los privilegios asignados al usuario actual, que se han otorgado directamente al usuario o a través de los grupos a los que pertenece.
+* __whoami /all__ : Se utiliza en sistemas operativos Windows y muestra información detallada sobre la cuenta de usuario actual. La salida del comando incluirá información como el nombre de inicio de sesión, el SID (identificador de seguridad), los grupos de seguridad a los que pertenece el usuario, la información de inicio de sesión interactiva y de red, la información de inicio de sesión de servicio y los derechos asignados al usuario.
 :emoji:
