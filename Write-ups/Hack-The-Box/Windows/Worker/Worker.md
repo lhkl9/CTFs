@@ -306,13 +306,31 @@ Cambio de unidad “c:”
 
 # Links útiles
 
+* https://book.hacktricks.xyz/welcome/readme
+* https://book.hacktricks.xyz/network-services-pentesting/3690-pentesting-subversion-svn-server
+* https://raw.githubusercontent.com/tennc/webshell/master/fuzzdb-webshell/asp/cmdasp.aspx
+* https://eternallybored.org/misc/netcat/
 
   
   
   
 ## Lenguajes utilizados
 ## Vulnerabilidades en aplicaciones
+
+* Carga de web shell mediante Pipelines en Azure DevOps
 ## Ataques
 ## Escalada de privilegios
+
+* Ejecución de scripts como NT Authority System mediante Pipelines. (Release Pipeline)
 ## Exploits
 ## Herramientas
+
+* ping
+* nmap
+* nc64.exe
+* cmdasp.aspx
+* Protocolo svn
+* Pipelines en Azure DevOps: El despliegue de scripts mediante pipelines en Azure DevOps se llama "Release Pipeline" o "Pipeline de implementación". En esta etapa, se lleva a cabo la implementación de las aplicaciones o servicios creados en las etapas anteriores del pipeline, utilizando scripts y otros artefactos necesarios para el despliegue. La implementación puede incluir la configuración de infraestructura, la instalación de dependencias y la ejecución de scripts específicos para el entorno de destino. La implementación automatizada a través de pipelines permite una entrega más rápida, confiable y repetible de aplicaciones y servicios en Azure DevOps.
+
+Agregar el resto de herramientas#########################
+
