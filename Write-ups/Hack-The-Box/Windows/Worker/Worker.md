@@ -329,11 +329,19 @@ Cambio de unidad “c:”
 * nmap
 * nc64.exe
 * cmdasp.aspx
-* Protocolo SVN 
-** svn ls
+* Protocolo SVN
 * Pipelines en Azure DevOps: El despliegue de scripts mediante pipelines en Azure DevOps se llama "Release Pipeline" o "Pipeline de implementación". En esta etapa, se lleva a cabo la implementación de las aplicaciones o servicios creados en las etapas anteriores del pipeline, utilizando scripts y otros artefactos necesarios para el despliegue. La implementación puede incluir la configuración de infraestructura, la instalación de dependencias y la ejecución de scripts específicos para el entorno de destino. La implementación automatizada a través de pipelines permite una entrega más rápida, confiable y repetible de aplicaciones y servicios en Azure DevOps.
 * WFUZZ
 * GOBUSTER
 * nmap con cript http-enum
-* 
+* EVIL-WINRM
+* crackmapexec
+* Create pull request en Azure DevOps
+* Create Pipelines en Azure DevOps
+* Agents Pool en Azure DevOps
+* curl
+* net share
+* w:
+* whoami /priv
+* whoami /all
 
