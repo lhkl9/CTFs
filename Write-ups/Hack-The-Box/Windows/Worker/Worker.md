@@ -364,4 +364,4 @@ En resumen, "Create Pipelines" es una herramienta valiosa en Azure DevOps que pe
 * w:
 * whoami /priv : Se utiliza en sistemas operativos Windows y muestra los privilegios actuales del usuario actual. La salida del comando incluirá una lista de los privilegios asignados al usuario actual, que se han otorgado directamente al usuario o a través de los grupos a los que pertenece.
 * whoami /all : Se utiliza en sistemas operativos Windows y muestra información detallada sobre la cuenta de usuario actual. La salida del comando incluirá información como el nombre de inicio de sesión, el SID (identificador de seguridad), los grupos de seguridad a los que pertenece el usuario, la información de inicio de sesión interactiva y de red, la información de inicio de sesión de servicio y los derechos asignados al usuario.
-
+:emoji:
