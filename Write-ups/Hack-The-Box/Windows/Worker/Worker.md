@@ -345,7 +345,18 @@ Con la función "Create pull request" en Azure DevOps, los desarrolladores puede
 Una vez que se aprueba la solicitud de extracción, los cambios se fusionan en la rama principal del repositorio de código y están disponibles para su uso en futuras versiones del proyecto. En resumen, "Create pull request" es una herramienta valiosa en Azure DevOps que permite a los desarrolladores trabajar juntos de manera más eficiente y colaborativa en proyectos de software.
 
 
-* Create Pipelines en Azure DevOps
+* Create Pipelines en Azure DevOps : "Create Pipelines" es una funcionalidad en Azure DevOps que permite a los desarrolladores automatizar la construcción, prueba y implementación de su software.
+
+Un pipeline (tubería o canalización) en Azure DevOps es una serie de pasos automatizados que se ejecutan para construir, probar y publicar software en un ambiente específico. Al crear un pipeline en Azure DevOps, los desarrolladores pueden automatizar los procesos de integración continua y entrega continua (CI/CD) para garantizar que el software se construya y se implemente correctamente en cada cambio de código.
+
+Para crear un pipeline en Azure DevOps, los desarrolladores pueden utilizar una interfaz gráfica de usuario (GUI) o escribir el archivo de definición del pipeline en lenguaje YAML. El archivo de definición del pipeline especifica los pasos que se deben seguir para construir, probar y publicar el software.
+
+Una vez que se ha creado el pipeline en Azure DevOps, los desarrolladores pueden configurar los desencadenadores para que se ejecute automáticamente en respuesta a cambios en el código o según una programación específica. Los desarrolladores también pueden monitorear el progreso del pipeline y recibir notificaciones de cualquier error o problema.
+
+En resumen, "Create Pipelines" es una herramienta valiosa en Azure DevOps que permite a los desarrolladores automatizar los procesos de integración continua y entrega continua, lo que mejora la eficiencia y la calidad del software y reduce los errores en el proceso de implementación.
+
+****los pipelines de Azure DevOps pueden ejecutar tareas como "NT-AUTORIDAD/SYSTEM" para realizar acciones que requieren permisos elevados****
+
 * Agents Pool en Azure DevOps
 * curl
 * net share : Se utiliza en sistemas operativos Windows, permite al usuario ver y administrar los recursos compartidos en una computadora en red.
