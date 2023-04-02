@@ -334,14 +334,23 @@ Cambio de unidad “c:”
 * WFUZZ
 * GOBUSTER
 * nmap con cript http-enum
-* EVIL-WINRM
+* EVIL-WINRM : Herramienta utilizada para la explotación de vulnerabilidades en sistemas operativos Windows que permite el acceso remoto a una máquina en red utilizando el protocolo WinRM (Windows Remote Management) (Puerto 5985)(Puerto 5986 con SSL/TLS).
 * crackmapexec
-* Create pull request en Azure DevOps
+* Create pull request en Azure DevOps : "Create pull request" es una funcionalidad en Azure DevOps que permite a los desarrolladores colaborar y trabajar juntos en un proyecto de software mediante el control de versiones.
+
+Un pull request (solicitud de extracción) es una función que permite a los desarrolladores notificar a sus compañeros de equipo que han completado una nueva función o corrección de errores y solicitar que se revisen y fusionen sus cambios en la rama principal del proyecto.
+
+Con la función "Create pull request" en Azure DevOps, los desarrolladores pueden crear una solicitud de extracción de cambios que se hayan realizado en una rama específica del repositorio de código. Los revisores asignados a la solicitud de extracción pueden revisar los cambios, hacer comentarios y sugerencias, y aprobar o rechazar la solicitud.
+
+Una vez que se aprueba la solicitud de extracción, los cambios se fusionan en la rama principal del repositorio de código y están disponibles para su uso en futuras versiones del proyecto. En resumen, "Create pull request" es una herramienta valiosa en Azure DevOps que permite a los desarrolladores trabajar juntos de manera más eficiente y colaborativa en proyectos de software.
+
+
 * Create Pipelines en Azure DevOps
 * Agents Pool en Azure DevOps
 * curl
-* net share
+* net share : Se utiliza en sistemas operativos Windows, permite al usuario ver y administrar los recursos compartidos en una computadora en red.
+ La salida del comando "net share" mostrará una lista de todos los recursos compartidos en la computadora, incluidos los nombres de recurso, las rutas de acceso, los permisos de acceso y los niveles de uso. También se pueden agregar, modificar o eliminar recursos compartidos utilizando los argumentos del comando "net share".
 * w:
-* whoami /priv
-* whoami /all
+* whoami /priv : Se utiliza en sistemas operativos Windows y muestra los privilegios actuales del usuario actual. La salida del comando incluirá una lista de los privilegios asignados al usuario actual, que se han otorgado directamente al usuario o a través de los grupos a los que pertenece.
+* whoami /all : Se utiliza en sistemas operativos Windows y muestra información detallada sobre la cuenta de usuario actual. La salida del comando incluirá información como el nombre de inicio de sesión, el SID (identificador de seguridad), los grupos de seguridad a los que pertenece el usuario, la información de inicio de sesión interactiva y de red, la información de inicio de sesión de servicio y los derechos asignados al usuario.
 
