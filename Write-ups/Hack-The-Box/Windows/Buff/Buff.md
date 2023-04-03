@@ -366,12 +366,24 @@ python2 exploitflow.py
   
   
 ## Lenguajes utilizados
+* Python
 ## Vulnerabilidades en aplicaciones
 * CloudMe
 ## Ataques
-* BufferOverflow
+* Buffer Overflow
+* PortForwarding
 ## Escalada de privilegios
-* *BufferOverflow
+* *Buffer Overflow
 ## Exploits
 ## Herramientas
+* Ping
+* nmap
+* whatweb
+* searchsploit
+* netcat
+* winPEAS.exe
+* netstat -nat
+* python -m http.server 80
+* chisel
+* msfvenom
 * CloudMe
