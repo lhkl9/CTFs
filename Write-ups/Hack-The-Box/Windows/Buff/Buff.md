@@ -1,5 +1,6 @@
+# BUFF - HACK THE BOX - EASY
 
-
+Rápido acceso al sistema, y muy buena para practicar BufferOverflow básico manual
 
 # Enumeración | Reconocimiento | y posibles ataques
 
