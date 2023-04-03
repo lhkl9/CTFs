@@ -262,15 +262,23 @@ CloudMe 1.11.2 - Buffer Overflow (PoC)                                   	| http
 Script final con payload modificado
 
 #Exploit Title: CloudMe 1.11.2 - Buffer Overflow (PoC)
+
 #Date: 2020-04-27
+
 #Exploit Author: Andy Bowden
+
 #Vendor Homepage: https://www.cloudme.com/en
+
 #Software Link: https://www.cloudme.com/downloads/CloudMe_1112.exe
+
 #Version: CloudMe 1.11.2
+
 #Tested on: Windows 10 x86
 
+
 #Instructions:
-# Start the CloudMe service and run the script.
+
+#Start the CloudMe service and run the script.
 
 import socket
 
