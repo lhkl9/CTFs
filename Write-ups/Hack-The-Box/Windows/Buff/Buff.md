@@ -23,8 +23,8 @@ PORT 	STATE SERVICE	REASON
 
 Puertos abiertos:
 
-*7680
-*8080
+* 7680
+* 8080
 
 nmap -p8080,7680 -sCV 10.10.10.198
 
@@ -357,14 +357,21 @@ python2 exploitflow.py
 
 
 # Links útiles
-
+* https://eternallybored.org/misc/netcat/
+* https://github.com/carlospolop/PEASS-ng/tree/master/winPEAS
+* www.google.com
+* https://github.com/jpillora/chisel/releases
 
   
   
   
 ## Lenguajes utilizados
 ## Vulnerabilidades en aplicaciones
+* CloudMe
 ## Ataques
+* BufferOverflow
 ## Escalada de privilegios
+* *BufferOverflow
 ## Exploits
 ## Herramientas
+* CloudMe
