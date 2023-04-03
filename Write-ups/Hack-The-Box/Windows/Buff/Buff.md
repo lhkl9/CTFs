@@ -61,14 +61,14 @@ Shellcodes: No Results<br>
 searchsploit Gym Management
 
 →<br>
-------------------------------------------------------------------------------------------------- ---------------------------------
- Exploit Title                                                                               	|  Path
-------------------------------------------------------------------------------------------------- ---------------------------------
-Gym Management System 1.0 - 'id' SQL Injection                                               	| php/webapps/48936.txt
-Gym Management System 1.0 - Authentication Bypass                                            	| php/webapps/48940.txt
-Gym Management System 1.0 - Stored Cross Site Scripting                                      	| php/webapps/48941.txt
-Gym Management System 1.0 - Unauthenticated Remote Code Execution                            	| php/webapps/48506.py
-------------------------------------------------------------------------------------------------- ---------------------------------
+------------------------------------------------------------------------------------------------- ---------------------------------<br>
+ Exploit Title                                                                               	|  Path<br>
+------------------------------------------------------------------------------------------------- ---------------------------------<br>
+Gym Management System 1.0 - 'id' SQL Injection                                               	| php/webapps/48936.txt<br>
+Gym Management System 1.0 - Authentication Bypass                                            	| php/webapps/48940.txt<br>
+Gym Management System 1.0 - Stored Cross Site Scripting                                      	| php/webapps/48941.txt<br>
+Gym Management System 1.0 - Unauthenticated Remote Code Execution                            	| php/webapps/48506.py<br>
+------------------------------------------------------------------------------------------------- ---------------------------------<br>
 
 
 CRITICO: Unauthenticated Remote Code Execution
