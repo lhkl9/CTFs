@@ -346,12 +346,22 @@ https://github.com/kfosaaen/Get-LAPSPasswords<br>
   
 ## Lenguajes utilizados
 ## Vulnerabilidades en aplicaciones
-* LAPS
+* LAPS : LAPS (Local Administrator Password Solution) es un programa desarrollado por Microsoft que permite a los administradores de sistemas de Windows administrar automáticamente las contraseñas de las cuentas de administrador local de sus sistemas.
+
+LAPS permite establecer políticas para cambiar automáticamente las contraseñas de las cuentas de administrador local de los sistemas, lo que ayuda a prevenir ataques de acceso no autorizado. Además, LAPS almacena las contraseñas en un lugar seguro y las protege mediante cifrado.
+
+Al utilizar LAPS, los administradores pueden administrar fácilmente las contraseñas de las cuentas de administrador local de sus sistemas, lo que simplifica la administración de la seguridad de sus sistemas. Además, LAPS puede ser integrado con Active Directory, lo que permite a los administradores centralizar la administración de las contraseñas de los sistemas.
+
+En resumen, LAPS es una herramienta útil para mejorar la seguridad de los sistemas de Windows al permitir una administración más segura y automatizada de las contraseñas de las cuentas de administrador local.
+
 ## Ataques
+
+
 ## Escalada de privilegios
 * whoami /priv
 * net user "user"
 * Ver historial de prowershell
+* Get-LAPSPasswords : https://github.com/kfosaaen/Get-LAPSPasswords :  Utiliza la API de LAPS para recuperar y descifrar las contraseñas de las cuentas de administrador local, y presenta los resultados de una manera legible y fácil de usar para los administradores de sistemas.
 ## Exploits
 ## Herramientas
 * ping : Utiliza el Protocolo de Control de Mensajes de Internet (ICMP, por sus siglas en inglés) para enviar los paquetes de datos y recibir las respuestas. ICMP es un protocolo utilizado por los dispositivos de red para informar sobre errores en la comunicación de la red y proporcionar información de diagnóstico para solucionar problemas de red.
@@ -369,14 +379,32 @@ La opción "null" en el comando "smbmap" indica que se realizará una conexión 
 
 Esta herramienta puede ser útil para identificar recursos compartidos de red que pueden estar mal configurados o expuestos a riesgos de seguridad, ya que cualquier usuario en la red puede acceder a ellos sin necesidad de proporcionar credenciales de autenticación.
 
-* fcrackzip
-* crackpkcs12
-* Creación de llave privada con archivo .pfx
-* Creación de certificado público con archivo .pfx
+* fcrackzip : Se utiliza para recuperar contraseñas de archivos ZIP protegidos con contraseña. Esta herramienta realiza ataques de fuerza bruta, es decir, prueba todas las combinaciones posibles de contraseñas hasta encontrar la correcta.
+
+fcrackzip tiene varias opciones y modos de operación, como la capacidad de usar diccionarios de palabras para acelerar el proceso de recuperación de contraseñas, y puede ser personalizado para ajustarse a las necesidades específicas del usuario
+* crackpkcs12 : El comando "crackpkcs12" es una herramienta de línea de comandos utilizada para recuperar contraseñas de archivos PKCS#12 protegidos con contraseña. PKCS#12 (Public Key Cryptography Standards #12) es un formato de archivo que se utiliza para almacenar certificados digitales y claves privadas, y es utilizado comúnmente para la autenticación y el cifrado en aplicaciones de seguridad informática.
+
+La herramienta "crackpkcs12" utiliza técnicas de ataque de fuerza bruta para recuperar la contraseña del archivo PKCS#12. La herramienta permite al usuario especificar un diccionario de contraseñas para acelerar el proceso de recuperación, y también admite el uso de ataques híbridos para combinar ataques de diccionario y ataques basados en patrones.
+
+* Creación de llave privada con archivo .pfx | https://tecadmin.net/extract-private-key-and-certificate-files-from-pfx-file/<br>
+* Creación de certificado público con archivo .pfx | https://tecadmin.net/extract-private-key-and-certificate-files-from-pfx-file/<br>
 * evil-winrm con llave privada y certificado público [SSL]
-* net user
-* whoami /priv
+* net user : Permite administrar las cuentas de usuario locales.
+* whoami /priv : Al ejecutar el comando "whoami /priv", se muestra una lista de los privilegios actuales del usuario, indicando cuáles de ellos están activados. Estos privilegios pueden incluir, por ejemplo, permisos para realizar tareas de administración, acceso a recursos de sistema o permisos de seguridad.
+
 * net user "user"
-* Get-LAPSPasswords
-* Ver historial de prowershell
-* Extensión .PFX
+* Get-LAPSPasswords : El comando "Get-LAPSPasswords" es una herramienta de PowerShell utilizada para recuperar las contraseñas de cuenta de administrador local almacenadas en el objeto de política de seguridad de cuentas de privilegios locales (LAPS) de Active Directory.
+
+LAPS es una solución de Microsoft que permite a las organizaciones administrar y asegurar las contraseñas de las cuentas de administrador local en sus sistemas de manera centralizada. Cada cuenta de administrador local se asigna una contraseña única y aleatoria, que se almacena en un atributo protegido en el objeto de Active Directory correspondiente. LAPS utiliza la política de seguridad para controlar el acceso a las contraseñas de las cuentas de administrador local.
+
+El comando "Get-LAPSPasswords" se utiliza para recuperar las contraseñas de las cuentas de administrador local que están protegidas por LAPS. El comando se ejecuta en un controlador de dominio de Active Directory y utiliza la cuenta de servicio de LAPS para recuperar las contraseñas de las cuentas de administrador local y mostrarlas en la consola de PowerShell.
+
+Es importante tener en cuenta que solo los usuarios autorizados deben utilizar el comando "Get-LAPSPasswords" para recuperar las contraseñas de las cuentas de administrador local. Además, se deben seguir las políticas y procedimientos de seguridad de la organización para garantizar la seguridad de las contraseñas recuperadas y prevenir posibles amenazas de seguridad.
+
+* Ver historial de prowershell : Revisar el historial de PowerShell puede ser útil para identificar posibles rutas de escalada de privilegios en un sistema, ya que puede proporcionar información sobre las actividades realizadas por los usuarios en la línea de comandos de PowerShell. Algunos de los comandos de PowerShell que pueden ser utilizados para escalar privilegios pueden dejar rastros en el historial de comandos, lo que puede proporcionar pistas útiles para la identificación de posibles vulnerabilidades de seguridad.
+
+* Extensión .PFX : Un archivo PFX (Personal Information Exchange) es un formato de archivo que se utiliza para almacenar certificados digitales y claves privadas en un solo archivo. Estos archivos generalmente tienen una extensión de archivo .pfx o .p12.
+
+El archivo PFX contiene un certificado digital y su clave privada, y se utiliza comúnmente para la autenticación y el cifrado en aplicaciones de seguridad informática. Los archivos PFX pueden ser protegidos con una contraseña para garantizar la seguridad de la información almacenada en ellos.
+
+El formato de archivo PFX es compatible con varios sistemas operativos y aplicaciones, incluidos Windows, Mac OS X y Linux. Además, los archivos PFX son compatibles con una variedad de aplicaciones de seguridad informática, como navegadores web, clientes de correo electrónico y herramientas de firma digital.
