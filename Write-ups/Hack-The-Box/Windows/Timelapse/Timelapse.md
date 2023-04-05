@@ -349,6 +349,24 @@ https://github.com/kfosaaen/Get-LAPSPasswords<br>
 * LAPS
 ## Ataques
 ## Escalada de privilegios
+* whoami /priv
+* net user "user"
+* Ver historial de prowershell
 ## Exploits
 ## Herramientas
+* ping
+* nmap
+* crackmapexec smb
+* smbclient
+* smbmap null
+* fcrackzip
+* crackpkcs12
+* Creación de llave privada con archivo .pfx
+* Creación de certificado público con archivo .pfx
+* evil-winrm con llave privada y certificado público [SSL]
+* net user
+* whoami /priv
+* net user "user"
+* Get-LAPSPasswords
+* Ver historial de prowershell
 * Extensión .PFX
