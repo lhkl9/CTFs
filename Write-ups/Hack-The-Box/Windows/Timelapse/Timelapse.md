@@ -354,11 +354,21 @@ https://github.com/kfosaaen/Get-LAPSPasswords<br>
 * Ver historial de prowershell
 ## Exploits
 ## Herramientas
-* ping
+* ping : Utiliza el Protocolo de Control de Mensajes de Internet (ICMP, por sus siglas en inglés) para enviar los paquetes de datos y recibir las respuestas. ICMP es un protocolo utilizado por los dispositivos de red para informar sobre errores en la comunicación de la red y proporcionar información de diagnóstico para solucionar problemas de red.
+
+En cuanto a la capa de red del modelo OSI, el comando "ping" trabaja en la capa 3, la capa de red. ICMP se utiliza para informar sobre errores y enviar mensajes de control de la red a otros dispositivos de red.
+
+El comando "ping" envía paquetes de datos con un tamaño predeterminado y un intervalo de tiempo entre ellos. El comando muestra el tiempo que tardó cada paquete en llegar al dispositivo de destino y la respuesta que recibió. El tiempo de respuesta se muestra en milisegundos (ms).
+
 * nmap
-* crackmapexec smb
-* smbclient
-* smbmap null
+* crackmapexec smb : Explorar y enumerar los recursos compartidos de red en un sistema
+* smbclient : SMB CLIENT se ejecuta en sistemas operativos Unix y Linux, y permite a los usuarios conectarse a recursos compartidos de red, autenticarse en ellos y transferir archivos de y hacia ellos. La herramienta también se puede utilizar para realizar diversas operaciones, como listar los recursos compartidos disponibles en un sistema remoto, cambiar permisos de archivos, obtener información de los sistemas remotos
+* smbmap null : El comando "smbmap 'null'" es utilizado para enumerar los recursos compartidos de red que están abiertos para acceso anónimo (es decir, sin autenticación de usuario) en un servidor SMB (Server Message Block) en una red de computadoras.
+
+La opción "null" en el comando "smbmap" indica que se realizará una conexión sin autenticación a los recursos compartidos de red. Cuando se ejecuta el comando, "smbmap" muestra los recursos compartidos a los que se puede acceder sin autenticación, junto con sus permisos y otros detalles.
+
+Esta herramienta puede ser útil para identificar recursos compartidos de red que pueden estar mal configurados o expuestos a riesgos de seguridad, ya que cualquier usuario en la red puede acceder a ellos sin necesidad de proporcionar credenciales de autenticación.
+
 * fcrackzip
 * crackpkcs12
 * Creación de llave privada con archivo .pfx
